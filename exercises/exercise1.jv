@@ -1,0 +1,49 @@
+// 1. Pipeline Airports 
+pipeline AirportsPipeline {
+
+    AirportsExtractor -> AirportsTextFileInterpreter;
+
+    AirportsTextFileInterpreter
+        -> AirportsCSVInterpreter 
+        -> AirportsTableInterpreter
+        -> AirportsLoader;
+
+    // 2. Extract file from local system
+    block AirportsExtractor oftype LocalFileExtractor {
+        filePath: "rhein-kreis-neuss-flughafen-weltweit.csv";
+    }
+
+    // 3. Interpret File as Text File
+    block AirportsTextFileInterpreter oftype TextFileInterpreter { }
+
+    // 4. Interpret CSV input and output as a Sheet
+    block AirportsCSVInterpreter oftype CSVInterpreter {
+        delimiter: ";";
+    }
+
+    // 5. Interpret a Sheet as Table
+    block AirportsTableInterpreter oftype TableInterpreter {
+        header: true;
+        columns: [
+            "Lfd. Nummer" oftype integer,
+            "Name des Flughafens" oftype text,
+            "Ort" oftype text,
+            "Land" oftype text,
+            "IATA" oftype text,
+            "ICAO" oftype text,
+            "Latitude" oftype decimal,
+            "Longitude" oftype decimal,
+            "Altitude" oftype integer,
+            "Zeitzone" oftype decimal,
+            "DST" oftype text,
+            "Zeitzonen-Datenbank" oftype text,
+            "geo_punkt" oftype text
+        ];
+    }
+
+    // 6. Loads Table into SQLite Database
+    block AirportsLoader oftype SQLiteLoader {
+        table: "airports";
+        file: "airports.sqlite";
+    }
+}
