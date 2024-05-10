@@ -4,7 +4,8 @@ pipeline TreesPipeline {
     TreesExtractor -> TreesTextFileInterpreter;
 
     TreesTextFileInterpreter
-        -> TreesCSVInterpreter 
+        -> TreesCSVInterpreter
+        -> BaumartDeutschDelete 
         -> TreesTableInterpreter
         -> TreesLoader;
 
@@ -38,8 +39,12 @@ pipeline TreesPipeline {
         //{geo-coordinate 1}, {geo-coordinate 2}
         value matches /\d{1,3}\.\d+,\s\d{1,3}\.\d+/;
 
+    // 6. Drop column "baumart_deutsch"
+    block BaumartDeutschDelete oftype ColumnDeleter {
+        delete: [column E];
+    }
 
-    // 6. Interpret a Sheet as Table
+    // 7. Interpret a Sheet as Table
     block TreesTableInterpreter oftype TableInterpreter {
         header: true;
         columns: [
@@ -47,7 +52,6 @@ pipeline TreesPipeline {
             "stadtteil" oftype StadtTeil,
             "standort" oftype text,
             "baumart_botanisch" oftype text,
-            "baumart_deutsch" oftype text,
             "id" oftype geoID,
             "baumfamilie" oftype text 
         ];
