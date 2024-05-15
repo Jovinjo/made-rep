@@ -2,8 +2,7 @@
 
 ## Title
 <!-- Give your project a short title. -->
-MADE Project 
-by Jonathan Vincent
+MADE Project - "Smart Climate Sound Level Measurements"
 
 ## Main Question
 
@@ -20,8 +19,8 @@ XY is an important problem, because... This projects analyzes XY, using method A
 <!-- Describe each datasources you plan to use in a section. Use the prefic "DatasourceX" where X is the id of the datasource. -->
 
 ### Datasource1: ExampleSource
-* Metadata URL: https://mobilithek.info/offers/-6901989592576801458
-* Data URL: https://raw.githubusercontent.com/od-ms/radverkehr-zaehlstellen/main/100035541/2019-01.csv
+* Metadata URL: https://www.govdata.de/ckan/dataset/boden-und-klimawandel-neue-aspekte-bei-der-abschatzung-der-erosionsgefahrdung-durch-wasser-als-71319.rdf
+* Data URL: https://data.bs.ch/explore/dataset/100081/table/?sort=zeitstempel
 * Data Type: CSV
 
 Short description of the DataSource.
