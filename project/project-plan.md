@@ -20,13 +20,13 @@ This project aims to explore the relationship between tree cover loss and greenh
 
 ### Datasource1: Country Carbon Data
 * Metadata URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022/data
-* Data URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022/data/Country carbon data.csv
+* Data URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022?select=deforestation/Country%20carbon%20data.csv
 * Data Type: CSV
 * Description: Aboveground woody biomass stocks and densities in 2000 (Mg AGB and Mg AGB/ha, respectively); average annual GHG emissions, removals (sequestration), and net flux between 2001 and 2022 (Mg CO2e/yr); annual GHG emissions (Mg CO2e). Provided by percent canopy cover in 2000 (>30%, 50%, and 75% only).
 
 ### Datasource1: Country Tree Cover Loss
 * Metadata URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022/data
-* Data URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022/data/Country tree cover loss.csv
+* Data URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022?select=deforestation/Country%20tree%20cover%20loss.csv
 * Data Type: CSV
 * Description: Hectares of tree cover loss at a national level, between 2001-2022, categorized by percent canopy cover in 2000.
 
