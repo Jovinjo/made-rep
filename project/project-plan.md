@@ -2,33 +2,27 @@
 
 ## Title
 <!-- Give your project a short title. -->
-Analyzing the Impact of Tree Cover Loss on Greenhouse Gas Emissions and Climate Change (2001-2022)
+Analyzing the Impact of Major Carbon Emitters on Global Greenhouse Gas Emissions and Climate Change (1988-2022)
 
 ## Main Question
 
 <!-- Think about one main question you want to answer based on the data. -->
-1. How does tree cover loss impact greenhouse gas emissions and carbon sequestration, and what are the broader implications for climate change over the period 2001-2022?
+1. How have the emissions from major carbon producers contributed to global greenhouse gas emissions, and what are the broader implications for climate change over the period 1988-2022?
 
 ## Description
 
 <!-- Describe your data science project in max. 200 words. Consider writing about why and how you attempt it. -->
-This project aims to explore the relationship between tree cover loss and greenhouse gas (GHG) emissions, and to assess the broader implications for climate change. Using the "Global Forest Data (2001-2022): Tree Cover, Biomass, and Carbon Flux Analysis" dataset, the study will provide a detailed analysis of global forestry metrics over 21 years. The dataset includes information on tree cover extent, aboveground biomass stocks and densities, annual records of tree cover loss, forest GHG emissions, and CO2 removals. By understanding these correlation, the project seeks to inform environmental policies and strategies aimed at forest conservation and carbon management.
+This project aims to explore the relationship between major carbon producers (Carbon Majors) and global greenhouse gas (GHG) emissions, and to assess the broader implications for climate change. Using the "Carbon Majors Dataset (1988-2022): Emissions Data from Fossil Fuel Producers," the study will provide a detailed analysis of emissions attributed to key carbon producers over 34 years. The dataset includes information on annual emissions from major fossil fuel companies, their production volumes, and the resulting GHG emissions. By understanding these correlations, the project seeks to inform climate policies and strategies aimed at emission reductions and climate change mitigation.
 
 ## Datasources
 
 <!-- Describe each datasources you plan to use in a section. Use the prefic "DatasourceX" where X is the id of the datasource. -->
 
-### Datasource1: Country Carbon Data
+### Datasource1: Carbon Majors Dataset
 * Metadata URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022/data
-* Data URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022?select=deforestation/Country%20carbon%20data.csv
+* Data URL: https://carbonmajors.org/evoke/391/get_cm_file?type=Basic&file=emissions_high_granularity.csv
 * Data Type: CSV
-* Description: Aboveground woody biomass stocks and densities in 2000 (Mg AGB and Mg AGB/ha, respectively); average annual GHG emissions, removals (sequestration), and net flux between 2001 and 2022 (Mg CO2e/yr); annual GHG emissions (Mg CO2e). Provided by percent canopy cover in 2000 (>30%, 50%, and 75% only).
-
-### Datasource1: Country Tree Cover Loss
-* Metadata URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022/data
-* Data URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022?select=deforestation/Country%20tree%20cover%20loss.csv
-* Data Type: CSV
-* Description: Hectares of tree cover loss at a national level, between 2001-2022, categorized by percent canopy cover in 2000.
+* Description:  contains year, entity, entity type, commodity, commodity production, commodity unit, and total emissions., as well as the reporting entity, data point source, product emissions, and the four different operational emissions: flaring, venting, own fuel use, and fugitive methane.
 
 ## Work Packages
 
