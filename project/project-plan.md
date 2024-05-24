@@ -2,27 +2,33 @@
 
 ## Title
 <!-- Give your project a short title. -->
-Analyzing the Impact of Major Carbon Emitters on Global Greenhouse Gas Emissions and Climate Change (1988-2022)
+Analyzing the Correlation between Major Carbon Emitter, Economic Development, and Climate Change (2000--2022)
 
 ## Main Question
 
 <!-- Think about one main question you want to answer based on the data. -->
-1. How have the emissions from major carbon producers contributed to global greenhouse gas emissions, and what are the broader implications for climate change over the period 1988-2022?
+1. How have emissions from specific commodity within major carbon-producing countries contributed to their overall greenhouse gas emissions from 2000 to 2022? and what is the relationship with the economic growth of those countries?
 
 ## Description
 
 <!-- Describe your data science project in max. 200 words. Consider writing about why and how you attempt it. -->
-This project aims to explore the relationship between major carbon producers (Carbon Majors) and global greenhouse gas (GHG) emissions, and to assess the broader implications for climate change. Using the "Carbon Majors Dataset (1988-2022): Emissions Data from Fossil Fuel Producers," the study will provide a detailed analysis of emissions attributed to key carbon producers over 34 years. The dataset includes information on annual emissions from major fossil fuel companies, their production volumes, and the resulting GHG emissions. By understanding these correlations, the project seeks to inform climate policies and strategies aimed at emission reductions and climate change mitigation.
+This project aims to investigate the contributions of specific commodities to the overall greenhouse gas (GHG) emissions of major carbon-producing countries and explore the relationship between these emissions and the economic growth of those countries from 2000 to 2022. Using the "Carbon Majors Dataset," which includes detailed emissions data from major fossil fuel producers, the study will analyze the impact of commodity-specific emissions on national and global GHG trends. Additionally, the project will examine the correlation between these emissions and economic indicators to understand the interplay between carbon production, economic development, and climate change. The findings will provide insights into the effectiveness of current climate policies and strategies, helping to inform future efforts aimed at reducing emissions and mitigating climate change.
 
 ## Datasources
 
 <!-- Describe each datasources you plan to use in a section. Use the prefic "DatasourceX" where X is the id of the datasource. -->
 
 ### Datasource1: Carbon Majors Dataset
-* Metadata URL: https://www.kaggle.com/datasets/karnikakapoor/global-forest-data-2001-2022/data
+* Metadata URL: https://carbonmajors.org/site//data/000/000/Carbon_Majors_README.pdf
 * Data URL: https://carbonmajors.org/evoke/391/get_cm_file?type=Basic&file=emissions_high_granularity.csv
 * Data Type: CSV
-* Description:  contains year, entity, entity type, commodity, commodity production, commodity unit, and total emissions., as well as the reporting entity, data point source, product emissions, and the four different operational emissions: flaring, venting, own fuel use, and fugitive methane.
+* Description: The Carbon Majors database aims to trace greenhouse gas emissions from fossil fuels and cement produced by companies, historically from as early as 1854 to 2022. For this project, we focus on the datasets for the period of 2000-2022
+
+### Datasource2: World GDP Dataset
+* Metadata URL: https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.MKTP.CD
+* Data URL: https://api.worldbank.org/v2/en/indicator/NY.GDP.MKTP.CD?downloadformat=csv
+* Data Type: CSV
+* Description: Country GDP in US dollars for the period of 1960 to 2021. For this project, we focus on the datasets for the period of 2000-2022 
 
 ## Work Packages
 
