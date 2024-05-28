@@ -1,2 +1,2 @@
 #!/bin/bash
-jv /project/pipeline.jv
+python /project/pipeline.py
