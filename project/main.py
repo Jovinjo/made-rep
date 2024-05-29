@@ -11,6 +11,7 @@ def main():
             {"csv_name": "EER_2022_country_overview.csv", "df_type": "demand", "output_csv": "demand.csv"},
             {"csv_name": "EER_2022_generation.csv", "df_type": "generation", "output_csv": "generation.csv"}
         ]
+
         for dataset in datasets:
             df_extracted = extract_zip_data(eer_url, dataset["csv_name"], use_regex=False, skiprows=None)
             if df_extracted is not None:
@@ -22,6 +23,7 @@ def main():
         # Extract, transform, and save GDP data
         gdp_url = "https://api.worldbank.org/v2/en/indicator/NY.GDP.MKTP.CD?downloadformat=csv"
         gdp_name_csv = r"^API_NY\.GDP\.MKTP\.CD_DS2_en_csv_v2_\d+\.csv$"
+        
         gdp_df = extract_zip_data(gdp_url,gdp_name_csv,use_regex=True,skiprows=4)
         if gdp_df is not None:
             final_gdp_df = transform_gdp_data(gdp_df)
