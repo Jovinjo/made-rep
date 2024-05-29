@@ -37,16 +37,18 @@ This project aims to analyze the relationship between economic growth (GDP), ene
 
 <!-- List of work packages ordered sequentially, each pointing to an issue with more details. -->
 
-1. Problem Statement and Data Collection [#1][i1]
-2. Data cleaning and preprocessing [#2][i2]
-3. Data report [#3][i3]
-3. Data analysis, interpretation and visualization [#4][i4]
-4. Final Report [#5][i5]
+1. Define Problem Statement and Objectives[#1][i1]
+2. Identify and Collect Data[#2][i2]
+2. Data Preparation and Processing (ETL pipeline)[#3][i3]
+3. Data Report (Preliminary)[#4][i4]
+3. Data Analysis, Interpretation, and Visualization[#5][i5]
+4. Final Report (Result)[#6][i6]
 
 [i1]: https://github.com/Jovinjo/made-rep/issues/1
 [i2]: https://github.com/Jovinjo/made-rep/issues/2
 [i3]: https://github.com/Jovinjo/made-rep/issues/3
 [i4]: https://github.com/Jovinjo/made-rep/issues/4
 [i5]: https://github.com/Jovinjo/made-rep/issues/5
+[i6]: https://github.com/Jovinjo/made-rep/issues/6
 
 
