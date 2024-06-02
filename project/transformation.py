@@ -8,7 +8,7 @@ def transform_eer_data(eer_df,df_type):
         
         # Columns to drop based on dataframe type (demand, emission, generation)
         if df_type == 'demand':
-            columns_to_drop = ['country_code','eu_member', 'generation_twh', 'net_import_twh']
+            columns_to_drop = ['country_code','eu_member','generation_twh','net_import_twh']
         elif df_type == 'emission':
             columns_to_drop = ['country_code']
         elif df_type == 'generation':
