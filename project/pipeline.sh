@@ -1,2 +1,4 @@
 #!/bin/bash
-python /project/pipeline.py
+
+# run the main pipeline
+python3 ./project/main.py
