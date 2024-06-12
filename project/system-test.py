@@ -76,7 +76,7 @@ def test_data_pipeline():
             save_dataframe_to_csv(df, f"{source['name']}.csv")
             assert os.path.isfile(f"../data/{source['name']}.csv"), f"{source['name']} data does not exist"
             
-            # Validate dataframe and if output file exist
+            # Validate dataframe and make sure output file exist
             print(f"Check if {source['name']}.csv exist")
             check_dataframe(df, source['expected_columns'])
         

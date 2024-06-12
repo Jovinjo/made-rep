@@ -56,7 +56,7 @@ def transform_gdp_data(gdp_df):
         # Convert the dataframe from wide format to long format, create new column 'Year'
         final_gdp_df = pd.melt(filtered_columns_df, id_vars=id_vars, var_name='Year', value_name='GDP (US$)')
 
-        # Convert 'Year' to numeric 
+        # Convert 'Year' column to numeric 
         final_gdp_df['Year'] = pd.to_numeric(final_gdp_df['Year'])
 
         # Convert the 'GDP (US$)' column to numeric and return transformed dataframe
