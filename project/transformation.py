@@ -47,7 +47,7 @@ def transform_gdp_data(gdp_df):
         filtered_country_df = gdp_df[gdp_df['Country Name'].isin(['Germany','Sweden','Bulgaria'])]
         
         # Drop unnecessary columns
-        columns_to_drop = ['Indicator Code','Indicator Name','2022','2023','Unnamed: 68'] + [str(year) for year in range(1960, 2000)]
+        columns_to_drop = ['Indicator Code','Indicator Name','2022','2023'] + [str(year) for year in range(1960, 2000)]
         filtered_columns_df = filtered_country_df.drop(columns=columns_to_drop)
 
         # Define the columns that will be kept as identifier variables in the melting process (Wide to Long format)
@@ -55,6 +55,9 @@ def transform_gdp_data(gdp_df):
 
         # Convert the dataframe from wide format to long format, create new column 'Year'
         final_gdp_df = pd.melt(filtered_columns_df, id_vars=id_vars, var_name='Year', value_name='GDP (US$)')
+
+        # Convert 'Year' to numeric 
+        final_gdp_df['Year'] = pd.to_numeric(final_gdp_df['Year'])
 
         # Convert the 'GDP (US$)' column to numeric and return transformed dataframe
         final_gdp_df['GDP (US$)'] = pd.to_numeric(final_gdp_df['GDP (US$)'], errors='coerce')
