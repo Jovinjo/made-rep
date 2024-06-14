@@ -78,6 +78,7 @@ def test_data_pipeline():
             
             # Validate dataframe and make sure output file exist
             print(f"Check if {source['name']}.csv exist")
+            print(f"Check if transformation for {source['name']} works properly")
             check_dataframe(df, source['expected_columns'])
         
         print("System test passed: all dataframes are validated")
