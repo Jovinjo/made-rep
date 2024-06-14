@@ -22,12 +22,14 @@ jobs:
         python-version: '3.11'
 
     - name: Check requirement and install dependencies
+      working-directory: "./project"
       run: |
           pip install --upgrade pip
           pip install -r ./requirements.txt
           echo "> Check dependencies...."
     
     - name: Run test.sh
+      working-directory: "./project"
       run: |
           sh ./test.sh
           echo "> Test Done!"
