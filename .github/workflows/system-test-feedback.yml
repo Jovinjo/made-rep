@@ -26,6 +26,7 @@ jobs:
 
       - name: Run test.sh
         run: |
+          chmod +x ./project/project/tests.sh
           ./project/project/tests.sh
           echo "> Test Done!"
   
