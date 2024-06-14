@@ -3,36 +3,33 @@ run-name: Running System-Test
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   system-test-feedback:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Project Reps.
-      uses: actions/checkout@v3
-      with:
-        path: project
+      - name: Checkout Project Reps.
+        uses: actions/checkout@v3
+        with:
+          path: project
 
-    - name: Set python version 3.11
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+      - name: Set python version 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-    - name: Install dependencies
-      run: |
+      - name: Install dependencies
+        run: |
           pip install requests
           pip install pandas
     
-    - name: Check if directory project exists
-      run: ls ./project
-  
-    - name: Ensure file permission for tests.sh
-      run: chmod +x ./project/tests.sh
+      - name: Check if directory project exists
+        run: ls ./project
 
-    - name: Run test.sh
-      run: |
-          sh ./project/tests.sh
+      - name: Run test.sh
+        run: |
+          ./project/tests.sh
           echo "> Test Done!"
   
     
