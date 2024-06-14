@@ -27,8 +27,12 @@ jobs:
           pip install pandas
     
     - name: Run test.sh
-      working-directory: "./project"
+      working-directory: "project"
       run: |
+          echo "> Check if directory project exists"
+          ls project/test.sh
+          echo "> Ensure file permission"
+          chmod +x ./project/tests.sh
           sh ./test.sh
           echo "> Test Done!"
     
