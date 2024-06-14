@@ -24,7 +24,7 @@ jobs:
           pip install requests
           pip install pandas
       
-      - name: Debug tests.sh location
+      - name: Check if directory exists and tests.sh location
         run: |
           ls -l ./project
           find ./project -name "tests.sh"
