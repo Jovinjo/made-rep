@@ -1,0 +1,37 @@
+name: Github Actions MADE
+run-name: Running System-Test
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - 'project/**'
+
+jobs:
+  system-test-feedback:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project Reps.
+      uses: actions/checkout@v3
+      with:
+        path: project
+
+    - name: Set python version 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Check requirement and install dependencies
+      run: |
+          pip install --upgrade pip
+          pip install -r project/requirement.txt
+    
+    - name: Run test.sh
+      run: |
+          sh project/test.sh
+          echo "> Test Done!"
+    
+
+
+
+  
