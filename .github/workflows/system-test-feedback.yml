@@ -21,12 +21,10 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Check requirement and install dependencies
-      working-directory: "./project"
+    - name: Install dependencies
       run: |
-          pip install --upgrade pip
-          pip install -r ./requirements.txt
-          echo "> Check dependencies...."
+          pip install requests
+          pip install pandas
     
     - name: Run test.sh
       working-directory: "./project"

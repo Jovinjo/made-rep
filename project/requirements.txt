@@ -1,3 +1,0 @@
-# non-built in packages
-pandas
-requests
