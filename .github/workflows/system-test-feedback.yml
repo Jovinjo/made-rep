@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - project/**
 
 jobs:
   system-test-feedback:
@@ -11,24 +13,28 @@ jobs:
     steps:
       - name: Checkout Project Reps.
         uses: actions/checkout@v3
-        with:
-          path: project
 
       - name: Set python version 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: |
+          pip install requests
+          pip install pandas
+      
       - name: Debug tests.sh location
         run: |
           ls -l ./project
           find ./project -name "tests.sh"
-
+  
       - name: Run test.sh
         run: |
-          chmod +x ./project/project/tests.sh
-          ./project/project/tests.sh
+          chmod +x ./project/tests.sh
+          ./project/tests.sh
           echo "> Test Done!"
+    
   
     
 
