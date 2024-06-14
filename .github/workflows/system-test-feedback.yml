@@ -24,12 +24,12 @@ jobs:
     - name: Check requirement and install dependencies
       run: |
           pip install --upgrade pip
-          pip install -r project/requirements.txt
+          pip install -r ./requirements.txt
           echo "> Check dependencies...."
     
     - name: Run test.sh
       run: |
-          sh project/test.sh
+          sh ./test.sh
           echo "> Test Done!"
     
 
