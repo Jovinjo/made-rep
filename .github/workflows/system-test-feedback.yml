@@ -5,7 +5,7 @@ on:
     branches:
     - main
     paths:
-    - 'project/**'
+    - project/**
 
 jobs:
   system-test-feedback:
@@ -30,11 +30,10 @@ jobs:
       run: ls ./project
   
     - name: Ensure file permission for tests.sh
-      run: chmod +x ./project/tests.sh
+      run: chmod +x ./tests.sh
 
     - name: Run test.sh
       run: |
-          cd project
           sh ./tests.sh
           echo "> Test Done!"
   
