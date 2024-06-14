@@ -1,3 +1,3 @@
 # run the system test
 echo "> Execute system test...."
-pytest project/system-test.py
+python3 ./project/system-test.py

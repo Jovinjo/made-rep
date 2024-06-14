@@ -19,13 +19,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Debug tests.sh location
         run: |
-          pip install requests
-          pip install pandas
-    
-      - name: Check if directory project exists
-        run: ls ./project
+          ls -l ./project
+          find ./project -name "tests.sh"
 
       - name: Run test.sh
         run: |
