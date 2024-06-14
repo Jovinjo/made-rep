@@ -1,0 +1,79 @@
+// 1. Pipeline GTFS
+pipeline GTFSPipeline {
+
+    GTFSExtractor -> GTFSZipInterpreter;
+
+    GTFSZipInterpreter
+        -> GTFSFilePicker
+        -> GTFSTextFileInterpreter
+        -> GTFSCSVInterpreter
+        -> GTFSColumnDeleter
+        -> GTFSTableInterpreter
+        -> GTFSLoader;
+
+    // 2. Extract file from url
+    block GTFSExtractor oftype HttpExtractor{
+        url: "https://gtfs.rhoenenergie-bus.de/GTFS.zip";
+    }
+
+    block GTFSZipInterpreter oftype ArchiveInterpreter{
+        archiveType: "zip";
+    }
+
+    block GTFSFilePicker oftype FilePicker {
+        path: "/stops.txt";
+    }
+
+    // 3. Interpret File as Text File with encoding latin-3 (allows german umlaut)
+    block GTFSTextFileInterpreter oftype TextFileInterpreter {
+        encoding: "utf8";
+    }
+
+    block GTFSCSVInterpreter oftype CSVInterpreter {
+        delimiter: ',';
+        enclosing: '"'; 
+		enclosingEscape: '"';
+    }
+
+    // 4. Remove unnecessary columns
+    block GTFSColumnDeleter oftype ColumnDeleter {
+        delete: [column B, column D, column H, column I, column J, column K, column L];
+    }
+
+    // 5. Define type of values
+    valuetype Zone1645 oftype integer{
+        constraints: [ZoneIdConstraint];
+    }
+
+    constraint ZoneIdConstraint on integer:
+        value == 1645;
+
+    valuetype GeoCoordinate90 oftype decimal {
+        constraints: [GeoCoordinateRange];
+        }
+
+    constraint GeoCoordinateRange oftype RangeConstraint {
+        lowerBound: -90;
+        lowerBoundInclusive: true;
+        upperBound: 90;
+        upperBoundInclusive: true;
+        }
+
+    // 6. Interpret a Sheet as Table
+    block GTFSTableInterpreter oftype TableInterpreter {
+        header: true;
+        columns: [
+            "stop_id" oftype integer,
+            "stop_name" oftype text,
+            "stop_lat" oftype GeoCoordinate90,
+            "stop_lon" oftype GeoCoordinate90,
+            "zone_id" oftype Zone1645,
+        ];
+    }
+
+    // 7. Loads Table into SQLite Database
+    block GTFSLoader oftype SQLiteLoader {
+        table: "stops";
+        file: "gtfs.sqlite";
+    }
+}
