@@ -61,7 +61,7 @@ def test_data_pipeline():
         {"name": "emission", "data": mock_emission_data, "expected_columns": ['Country Name', 'Year', 'Emissions Intensity (gCO2/kWh)', 'Emissions (MTcO2e)']},
         {"name": "generation", "data": mock_generation_data, "expected_columns": ['Country Name', 'Year', 'Fuel Code', 'Fuel Description', 'Electricity Generation (TWh)', 'Share of Generation (%)']},
         {"name": "demand", "data": mock_demand_data, "expected_columns": ['Country Name', 'Year', 'Electricity Demand (TWh)', 'Electricity Demand per Capita (MWh)']},
-        {"name": "world_gdp", "data": mock_world_gdp_data, "expected_columns": ['Country Name', 'Country Code', 'Year', 'GDP (US$)']}
+        {"name": "world_gdp", "data": mock_world_gdp_data, "expected_columns": ['Country Name', 'Country Code', 'Year', 'GDP (Billion US$)']}
     ]
 
     try:
