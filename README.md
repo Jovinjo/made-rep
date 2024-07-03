@@ -11,3 +11,6 @@
 </figure>
 
 ## Project Overview
+The study aims to clarify the impact of changes in GDP and the adoption of renewable energy sources on electricity demand patterns and carbon emissions in Germany, Sweden, and Bulgaria from 2000 to 2021.
+
+In order to provide a comprehensive understanding, Germany, Sweden, and Bulgaria were selected to represent a different spectrum of economic development and renewable energy policies. The results of this analysis will offer valuable insights into the effectiveness of renewable energy strategies in promoting economic growth and reducing CO2 emissions.
