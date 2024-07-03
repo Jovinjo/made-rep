@@ -7,7 +7,7 @@
 > *This repository has been forked from the [jvalue-made-template](https://github.com/jvalue/made-template) repository.*
 
 <figure>
-    <img src="/made-rep/cover_images.jpg" style="width:100%">
+    <img src="cover_images.jpg" style="width:100%">
 </figure>
 
 ## Project Overview
