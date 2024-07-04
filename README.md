@@ -23,7 +23,7 @@ In order to provide a comprehensive understanding, Germany, Sweden, and Bulgaria
 
 ## Steps to run pipeline
 
-This pipeline will run the programmed ETL and save the required data sources for the analysis/study in `\data``\data` directory. There should be 4 datasets ***demand.csv, emission.csv, generation.csv, and world_gdp.csv***
+This pipeline will run the programmed ETL and save the required data sources for the analysis/study in `\data` directory. There should be 4 datasets ***demand.csv, emission.csv, generation.csv, and world_gdp.csv***
 
 - [ ] Clone the project using SSH
 ```
