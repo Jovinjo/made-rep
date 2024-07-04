@@ -52,9 +52,11 @@ A Github Action has been created at [CI](https://github.com/Jovinjo/made-rep/blo
 
 ## Further Links
 
-Link to the Jupyter Notebook: [analysis-report.ipynb](https://github.com/Jovinjo/made-rep/blob/main/project/analysis-report.ipynb)
-Link to the Final Report: [analysis-report.pdf](https://github.com/Jovinjo/made-rep/blob/main/project/analysis-report.pdf)
-Link to the Data Quality Report: [data-report.pdf](https://github.com/Jovinjo/made-rep/blob/main/project/data-report.pdf)
+- Link to the Jupyter Notebook: [analysis-report.ipynb](https://github.com/Jovinjo/made-rep/blob/main/project/analysis-report.ipynb)
+- Link to the Final Report: [analysis-report.pdf](https://github.com/Jovinjo/made-rep/blob/main/project/analysis-report.pdf)
+- Link to the Data Quality Report: [data-report.pdf](https://github.com/Jovinjo/made-rep/blob/main/project/data-report.pdf)
+
+HAVE FUN! :smile:
 
 # Exercise Badges
 ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex1) ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex2) ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex3) ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex4) ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex5) 
