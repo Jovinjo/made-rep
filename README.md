@@ -58,5 +58,5 @@ A Github Action has been created at [CI](https://github.com/Jovinjo/made-rep/blo
 
 HAVE FUN! :smile:
 
-# Exercise Badges
+
 ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex1) ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex2) ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex3) ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex4) ![](https://byob.yarr.is/Jovinjo/made-rep/score_ex5) 
