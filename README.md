@@ -1,4 +1,4 @@
-# Analyzing the Relationship between Renewable Energy Adoption,CO2 Emissions, and Economic Growth in Germany, Sweden, andBulgaria (2000–2021)
+# Analyzing the Relationship between Renewable Energy Adoption,CO2 Emissions, and Economic Growth in Germany, Sweden, and Bulgaria (2000–2021)
 
 > *This repository has been forked from the [jvalue-made-template](https://github.com/jvalue/made-template) repository.*
 
