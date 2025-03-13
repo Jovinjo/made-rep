@@ -7,6 +7,9 @@
 </figure>
 
 ## Project Overview
+
+[Link-to-Project](https://oss.cs.fau.de/2024/08/13/renewable-energy-emissions-and-economic-growth-a-comparative-study-of-germany-sweden-and-bulgaria-2000-2021-a-made-summer-2024-project/)
+
 The study aims to clarify the impact of changes in GDP and the adoption of renewable energy sources on electricity demand patterns and carbon emissions in Germany, Sweden, and Bulgaria from 2000 to 2021.
 
 In order to provide a comprehensive understanding, Germany, Sweden, and Bulgaria were selected to represent a different spectrum of economic development and renewable energy policies. The results of this analysis will offer valuable insights into the effectiveness of sustainable economic growth on reducing electricity demand and CO2 emissions.
